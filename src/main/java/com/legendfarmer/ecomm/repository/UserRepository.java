@@ -3,8 +3,8 @@ package com.legendfarmer.ecomm.repository;
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
-
 import com.legendfarmer.ecomm.domain.User;
+
 
 public interface UserRepository extends CrudRepository<User, Long>{
 

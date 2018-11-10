@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -22,7 +23,7 @@ public class Role implements Serializable {
 	private Long roleId;
 	private String name;
 	
-	@OneToMany(mappedBy="role", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="role",cascade = CascadeType.ALL, fetch=FetchType.EAGER)
 	private Set<UserRole> userRoles = new HashSet<>();
 	
 	public long getRoleId() {
