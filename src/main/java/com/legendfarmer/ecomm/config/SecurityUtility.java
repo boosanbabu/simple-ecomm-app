@@ -26,6 +26,5 @@ public class SecurityUtility {
 			salt.append(SALTCHARS.charAt(idx));
 		}
 		return salt.toString();
-				
 	}
 }

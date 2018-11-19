@@ -3,8 +3,6 @@ package com.legendfarmer.ecomm.service;
 
 import java.util.Set;
 
-import org.springframework.stereotype.Service;
-
 import com.legendfarmer.ecomm.domain.User;
 import com.legendfarmer.ecomm.domain.security.UserRole;
 

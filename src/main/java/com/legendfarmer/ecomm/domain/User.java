@@ -14,6 +14,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -23,6 +25,7 @@ import com.legendfarmer.ecomm.domain.security.Authority;
 import com.legendfarmer.ecomm.domain.security.UserRole;
 
 @Entity
+@Table(name="users")
 public class User implements UserDetails, Serializable{
 
 	private static final long serialVersionUID = 902783495L;

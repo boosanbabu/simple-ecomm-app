@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import com.legendfarmer.ecomm.domain.User;
 
 @Entity
-@Table(name="user_role")
+@Table(name="user_roles")
 public class UserRole implements Serializable {
 	
 	private static final long serialVersionUID = 323223L;
